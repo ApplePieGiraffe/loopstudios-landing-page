@@ -1,0 +1,40 @@
+// imports
+
+@import './styles/Header';
+@import './styles/Hero';
+@import './styles/Footer';
+
+@import './styles/shared/DesktopMenu';
+@import './styles/shared/MobileMenu';
+@import './styles/shared/HamburgerMenu';
+
+// base styles
+
+html {
+	box-sizing: border-box;
+	font-size: 50%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.875rem;
+    overflow-x: hidden;
+}
+
+// global styles
+
+.content-wrapper {
+	width: 100%;
+	max-width: 1110px;
+	margin: 0 auto;
+}
+

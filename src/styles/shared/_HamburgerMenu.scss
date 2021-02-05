@@ -1,0 +1,34 @@
+.hamburger-menu {
+	position: relative;
+	z-index: 1;
+	width: 3rem;
+	cursor: pointer;
+
+	&__bar {
+		width: 3rem;
+		height: .25rem;
+		background-color: white;
+		transition: .3s;
+
+		&:not(:last-child) {
+			margin-bottom: .625rem;
+		}
+	}
+
+	&--active {
+		.hamburger-menu__bar {
+			&--1 {
+				transform: translate(-.25rem, .875rem) rotate(45deg);
+			}
+
+			&--2 {
+				opacity: 0;
+			}
+
+			&--3 {
+				transform: translate(-.25rem, -.875rem) rotate(-45deg);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+.header {
+    padding: 0 4rem;
+    
+    &__content-wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 8rem;
+    }
+
+    &__logo-link {
+        position: relative;
+        z-index: 1;
+        margin-right: auto;
+    }
+}

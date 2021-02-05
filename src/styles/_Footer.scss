@@ -1,0 +1,136 @@
+.footer {
+    padding: 7rem 0;
+    background-color: black;
+
+    margin-top: 50rem;
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo-link {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    &__nav {
+        margin-bottom: 6rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__link {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.5rem;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            opacity: 0;
+            transition: .3s;
+        }
+
+        &:hover::after {
+            width: 100%;
+            opacity: 1;
+        }
+
+        a {
+            color: white;
+            font-family: 'Alata', sans-serif;
+            font-size: 1.875rem;
+            line-height: 3.125rem;
+            text-decoration: none;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__social-links {
+        margin-bottom: 2rem;
+
+        svg {
+            cursor: pointer;
+
+            * {
+                transition: .3s;
+            }
+
+            &:hover {
+                * {
+                    opacity: .5;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__copyright {
+        color: white;
+        font-family: 'Alata', sans-serif;
+        font-size: 1.875rem;
+        line-height: 3.125rem;
+        opacity: 0.5;
+    }
+}
+
+.social-links-copy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .footer {
+        padding-top: 5.5rem;
+        padding-bottom: 4rem;
+
+        &__content-wrapper {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &__logo-link {
+            margin-bottom: 1.75rem;
+        }
+
+        &__nav {
+            margin-bottom: 0;
+        }
+
+        &__links {
+            flex-direction: row;
+        }
+
+        &__link {
+            &:not(:last-child) {
+                margin-bottom: 0;
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    .logo-nav-container {
+        margin-right: auto;
+    }
+
+    .social-links-copy-container {
+        align-items: flex-end;
+    }
+}
