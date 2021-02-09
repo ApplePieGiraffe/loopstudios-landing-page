@@ -13,6 +13,10 @@
     &__logo-link {
         display: block;
         margin-bottom: 4rem;
+
+        &:focus {
+            outline: 2px dotted white;
+        }
     }
 
     &__logo {
@@ -56,6 +60,10 @@
             font-size: 1.875rem;
             line-height: 3.125rem;
             text-decoration: none;
+
+            &:focus {
+                outline: 2px dotted white;
+            }
         }
 
         &:not(:last-child) {
@@ -68,6 +76,10 @@
     }
 
     &__social-link {
+        &:focus {
+            outline: 2px dotted white;
+        }
+
         &:not(:last-child) {
             margin-right: 2rem;
         }

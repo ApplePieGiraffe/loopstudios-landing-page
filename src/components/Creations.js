@@ -35,7 +35,7 @@ function Creations() {
                                     <img className="creation-card__img" src={card.desktopImg} alt={card.alt}/>
                                 </picture>
                                 <figcaption>{card.title}</figcaption>
-                                <span className="creation-card__bg-title">{card.title}</span>
+                                <span className="creation-card__bg-title" aria-hidden="true">{card.title}</span>
                             </figure>
                         </a>
                     ))}

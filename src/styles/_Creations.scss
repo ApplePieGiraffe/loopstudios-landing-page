@@ -41,6 +41,10 @@
             background-color: black;
             color: white;
         }
+
+        &:focus {
+            outline: 3px dotted black;
+        }
     }
 }
 
@@ -63,6 +67,10 @@
         figcaption {
             color: black;
         }
+    }
+
+    &:focus {
+        outline: 3px dotted black;
     }
 
     figure {

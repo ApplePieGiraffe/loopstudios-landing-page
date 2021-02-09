@@ -34,7 +34,10 @@
             font-family: 'Alata', sans-serif;
             line-height: 3.25rem;
             text-decoration: none;
-            transition: .5s ease-in-out;
+
+            &:focus {
+                outline: 2px dotted white;
+            }
         }
     }
 }

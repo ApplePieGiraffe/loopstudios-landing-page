@@ -11,5 +11,9 @@
         position: relative;
         z-index: 1;
         margin-right: auto;
+        
+        &:focus {
+            outline: 2px dotted white;
+        }
     }
 }
