@@ -9,11 +9,23 @@
 
     &__logo-link {
         position: relative;
-        z-index: 1;
+        z-index: 10;
         margin-right: auto;
         
         &:focus {
             outline: 2px dotted white;
+        }
+    }
+
+    &__logo {
+        width: 18rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .header {
+        &__logo {
+            width: initial;
         }
     }
 }

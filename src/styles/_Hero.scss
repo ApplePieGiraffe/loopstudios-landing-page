@@ -15,6 +15,7 @@
         padding: 2.5rem;
         color: white;
         font-size: 4rem;
+        font-weight: 300;
         line-height: 3.75rem;
         text-transform: uppercase;
 
@@ -24,7 +25,7 @@
     }
 }
 
-@media (min-width: 340px) {
+@media (min-width: 370px) {
 	.hero {
         &__heading {
             padding: 3rem;
