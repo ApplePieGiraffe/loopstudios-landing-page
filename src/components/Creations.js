@@ -29,14 +29,16 @@ function Creations() {
                 <div className="creations__grid">
                     {cards.map((card) => (
                         <a href="." className="creation-card" key={card.id} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-                            <figure>
-                                <picture>
-                                    <source media="(max-width: 999px)" srcset={card.mobileImg}/>
-                                    <img className="creation-card__img" src={card.desktopImg} alt={card.alt}/>
-                                </picture>
-                                <figcaption>{card.title}</figcaption>
+                            <div className="creation-card__wrapper">
+                                <figure>
+                                    <picture>
+                                        <source media="(max-width: 999px)" srcset={card.mobileImg}/>
+                                        <img className="creation-card__img" src={card.desktopImg} alt={card.alt}/>
+                                    </picture>
+                                    <figcaption>{card.title}</figcaption>
+                                </figure>
                                 <span className="creation-card__bg-title" aria-hidden="true">{card.title}</span>
-                            </figure>
+                            </div>
                         </a>
                     ))}
                 </div>

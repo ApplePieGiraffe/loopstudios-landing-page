@@ -73,6 +73,12 @@
         outline: 3px dotted black;
     }
 
+    &__wrapper {
+        position: relative;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
     figure {
         position: relative;
         width: 100%;
