@@ -20,14 +20,18 @@ function Creations() {
         // console.log('mouse move');
         let boundingBox = e.target.getBoundingClientRect();
 
-        // x position from the center of the card
-        let positionX = (e.clientX - boundingBox.left) - (boundingBox.width / 2);
-        // let img = e.target.querySelector('img');
-        // img.style.transform = `scale(1.5) translateX(2rem)`;
+        let halfWidth = (boundingBox.width / 2);
+        let halfHeight = (boundingBox.height / 2);
+        let cursorX = (e.clientX - boundingBox.left) - halfWidth;
+        let cursorY = (e.clientY - boundingBox.top) - halfHeight;
+        let img = e.target.querySelector('img');
+        img.style.transform = `scale(1.5) translateX(${-(cursorX / (halfWidth / 15))}%) translateY(${-(cursorY / (halfHeight / 15))}%)`;
     }
 
     function handleMouseLeave(e) {
         // console.log('mouse leave');
+        let img = e.target.querySelector('img');
+        img.style.transform = ``;
     }
 
     return (
