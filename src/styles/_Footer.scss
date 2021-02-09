@@ -64,9 +64,13 @@
     &__social-links {
         margin-bottom: 2rem;
 
-        svg {
-            cursor: pointer;
+        a {
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
 
+        svg {
             * {
                 transition: .3s;
             }
@@ -76,10 +80,6 @@
                     opacity: .5;
                 }
             }
-
-            &:not(:last-child) {
-                margin-right: 2rem;
-            }
         }
     }
 
@@ -88,6 +88,7 @@
         font-family: 'Alata', sans-serif;
         font-size: 1.875rem;
         line-height: 3.125rem;
+        text-align: center;
         opacity: 0.5;
     }
 }
@@ -125,6 +126,10 @@
                 margin-bottom: 0;
                 margin-right: 4rem;
             }
+        }
+
+        &__copyright {
+            text-align: start;
         }
     }
 

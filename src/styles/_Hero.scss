@@ -12,14 +12,24 @@
     &__heading {
         max-width: 50rem;
         border: 2px solid white;
-        padding: 3rem;
+        padding: 2.5rem;
         color: white;
-        font-size: 5rem;
-        line-height: 4.75rem;
+        font-size: 4rem;
+        line-height: 3.75rem;
         text-transform: uppercase;
 
         span {
             display: block;
+        }
+    }
+}
+
+@media (min-width: 340px) {
+	.hero {
+        &__heading {
+            padding: 3rem;
+            font-size: 5rem;
+            line-height: 4.75rem;
         }
     }
 }
