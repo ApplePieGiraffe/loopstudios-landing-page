@@ -12,26 +12,31 @@ function Creations() {
         {title: 'Make It Fisheye', mobileImg: './img/mobile/image-fisheye.jpg', desktopImg: './img/desktop/image-fisheye.jpg', alt: 'fisheye effect', key: 7},
     ]
 
+
     function handleMouseEnter(e) {
         // console.log('mouse over');
     }
     
     function handleMouseMove(e) {
-        // console.log('mouse move');
         let boundingBox = e.target.getBoundingClientRect();
-
         let halfWidth = (boundingBox.width / 2);
         let halfHeight = (boundingBox.height / 2);
         let cursorX = (e.clientX - boundingBox.left) - halfWidth;
         let cursorY = (e.clientY - boundingBox.top) - halfHeight;
+
         let img = e.target.querySelector('img');
-        img.style.transform = `scale(1.5) translateX(${-(cursorX / (halfWidth / 15))}%) translateY(${-(cursorY / (halfHeight / 15))}%)`;
+        img.style.transform = `scale(1.25) translateX(${-(cursorX / (halfWidth / 10))}%) translateY(${-(cursorY / (halfHeight / 10))}%)`;
+
+        let bgTitle = e.target.querySelector('.creation-card__bg-title');
+        bgTitle.style.transform = `scale(1.25) translateX(${(cursorX / (halfWidth / 10))}%) translateY(${(cursorY / (halfHeight / 10))}%)`;
     }
 
     function handleMouseLeave(e) {
         // console.log('mouse leave');
         let img = e.target.querySelector('img');
-        img.style.transform = ``;
+        img.style.transform = '';
+        let bgTitle = e.target.querySelector('.creation-card__bg-title');
+        bgTitle.style.transform = '';
     }
 
     return (
@@ -47,6 +52,7 @@ function Creations() {
                                     <img className="creation-card__img" src={card.desktopImg} alt={card.alt}/>
                                 </picture>
                                 <figcaption>{card.title}</figcaption>
+                                <span className="creation-card__bg-title">{card.title}</span>
                             </figure>
                         </a>
                     ))}

@@ -50,6 +50,10 @@
             opacity: .25;
         }
 
+        .creation-card__bg-title {
+            opacity: .25;
+        }
+
         figure::before {
             background: transparent;
         }
@@ -97,10 +101,32 @@
         text-transform: uppercase;
         transition: .3s;
         pointer-events: none;
+
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: -1rem;
+        //     left: 0;
+        //     width: 0px;
+        //     height: 2px;
+        //     background-color: black;
+        //     opacity: 0;
+        //     transition: .3s;
+        // }
     }
 
     &:nth-child(4) figcaption {
         width: 10rem;
+    }
+
+    &__bg-title {
+        position: absolute;
+        top: 10rem;
+        left: -50%;
+        color:white;
+        font-size: 20rem;
+        text-transform: uppercase;
+        opacity: 0;
     }
 }
 
