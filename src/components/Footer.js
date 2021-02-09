@@ -1,10 +1,12 @@
+import logo from '../assets/shared/logo.svg';
+
 function Footer() {
     return (
         <footer className="footer">
             <div className="content-wrapper footer__content-wrapper">
                 <div className="logo-nav-container">
                     <a className="footer__logo-link" href="/">
-                        <img className="footer__logo" src="./img/shared/logo.svg" alt="Loopstudio's logo"/>
+                        <img className="footer__logo" src={logo} alt="Loopstudio's logo"/>
                     </a>
                     <nav className="footer__nav">
                         <ul className="footer__links">

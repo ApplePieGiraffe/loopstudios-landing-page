@@ -1,6 +1,6 @@
 .header-hero-container {
 	height: 81.25rem;
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../img/hero-mobile.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../assets/mobile/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -36,7 +36,7 @@
 
 @media (min-width: 600px) {
     .header-hero-container {
-        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../img/hero-desktop.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../assets/desktop/image-hero.jpg');
     }
 
 	.hero {

@@ -6,9 +6,9 @@
 @import './styles/Creations';
 @import './styles/Footer';
 
-@import './styles/shared/DesktopMenu';
-@import './styles/shared/MobileMenu';
-@import './styles/shared/HamburgerMenu';
+@import './styles/DesktopMenu';
+@import './styles/MobileMenu';
+@import './styles/HamburgerMenu';
 
 // base styles
 
@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-// misc global styles
+// other
 
 .content-wrapper {
 	width: 100%;

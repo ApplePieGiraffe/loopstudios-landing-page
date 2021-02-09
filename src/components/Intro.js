@@ -1,10 +1,13 @@
+import mobileImg from '../assets/mobile/image-interactive.jpg';
+import desktopImg from '../assets/desktop/image-interactive.jpg';
+
 function Intro() {
     return (
         <section class="intro">
             <div className="content-wrapper intro__content-wrapper">
                 <picture>
-                    <source media="(max-width: 799px)" srcset="./img/mobile/image-interactive.jpg"/>
-                    <img className="intro__img" src="./img/desktop/image-interactive.jpg" alt="man wearing VR headset"/>
+                    <source media="(max-width: 799px)" srcset={mobileImg}/>
+                    <img className="intro__img" src={desktopImg} alt="man wearing VR headset"/>
                 </picture>
                 <div className="intro__text">
                     <h2 className="intro__heading">The Leader In Interactive VR</h2>

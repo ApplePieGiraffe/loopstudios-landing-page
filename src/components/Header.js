@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-
-import DesktopMenu from './shared/DesktopMenu';
-import MobileMenu from './shared/MobileMenu';
+import logo from '../assets/shared/logo.svg';
+import DesktopMenu from './DesktopMenu';
+import MobileMenu from './MobileMenu';
 
 function Header() {
     let [width, setWidth] = useState(window.innerWidth);
@@ -14,7 +14,7 @@ function Header() {
         <header className="header">
             <div className="content-wrapper header__content-wrapper">
                 <a className="header__logo-link" href=".">
-                    <img className="header__logo" src="./img/shared/logo.svg" alt="Loopstudio's logo"/>
+                    <img className="header__logo" src={logo} alt="Loopstudios logo"/>
                 </a>
                 { width <= 699 ? <MobileMenu /> : <DesktopMenu /> }
             </div>
