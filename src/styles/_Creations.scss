@@ -101,18 +101,6 @@
         text-transform: uppercase;
         transition: .3s;
         pointer-events: none;
-
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     bottom: -1rem;
-        //     left: 0;
-        //     width: 0px;
-        //     height: 2px;
-        //     background-color: black;
-        //     opacity: 0;
-        //     transition: .3s;
-        // }
     }
 
     &:nth-child(4) figcaption {
