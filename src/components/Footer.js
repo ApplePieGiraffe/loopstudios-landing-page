@@ -3,7 +3,7 @@ function Footer() {
         <footer className="footer">
             <div className="content-wrapper footer__content-wrapper">
                 <div className="logo-nav-container">
-                    <a className="footer__logo-link" href=".">
+                    <a className="footer__logo-link" href="/">
                         <img className="footer__logo" src="./img/shared/logo.svg" alt="Loopstudio's logo"/>
                     </a>
                     <nav className="footer__nav">

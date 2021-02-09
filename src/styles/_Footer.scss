@@ -1,8 +1,6 @@
 .footer {
-    padding: 7rem 0;
+    padding: 7rem 4rem;
     background-color: black;
-
-    margin-top: 50rem;
 
     &__content-wrapper {
         display: flex;
@@ -13,6 +11,10 @@
     &__logo-link {
         display: block;
         margin-bottom: 4rem;
+    }
+
+    &__logo {
+        width: 18rem;
     }
 
     &__nav {
@@ -99,7 +101,7 @@
 @media only screen and (min-width: 800px) {
     .footer {
         padding-top: 5.5rem;
-        padding-bottom: 4rem;
+        padding-bottom: 5rem;
 
         &__content-wrapper {
             flex-direction: row;
@@ -107,7 +109,7 @@
         }
 
         &__logo-link {
-            margin-bottom: 1.75rem;
+            margin-bottom: 2.5rem;
         }
 
         &__nav {

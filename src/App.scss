@@ -2,6 +2,8 @@
 
 @import './styles/Header';
 @import './styles/Hero';
+@import './styles/Intro';
+@import './styles/Creations';
 @import './styles/Footer';
 
 @import './styles/shared/DesktopMenu';
@@ -30,11 +32,10 @@ body {
     overflow-x: hidden;
 }
 
-// global styles
+// misc global styles
 
 .content-wrapper {
 	width: 100%;
 	max-width: 1110px;
 	margin: 0 auto;
 }
-
